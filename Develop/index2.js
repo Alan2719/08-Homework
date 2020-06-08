@@ -16,9 +16,9 @@ function Askquestions() {
                 name:'description'
             },
             {
-                message:'Content of your file',
+                message:'GitHub User: ',
                 type:'input',
-                name:'content'
+                name:'user'
             },
             {
                 message:'Packages needed: ',
@@ -74,9 +74,6 @@ let writeToFile = (fileName, data) => {
 async function init() { 
     try {
         const data = await Askquestions();
-        let contentArray = data.content.split(' ');
-        //console.log(contentArray);
-        data.content = contentArray;
         const sendAnswers = await new generateMarkdown(data);
         console.log(sendAnswers);
         //writeToFile(data.title,sendAnswers);
