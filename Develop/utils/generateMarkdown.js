@@ -1,21 +1,30 @@
 function generateMarkdown(data) {
   return new Promise((resolve,reject) => {
   resolve(`# ${data.title}
-  ${data.title}
+  ----
   ## Description
-  As a developer, the purpose of this development is to ${data.description}
+  ${data.description}
+  ----
   ## Table of contents
-  ${data.contentsTable}
+  ${data.content}
+  ---
   ## Installation
+  This is a guide to install this application:
   ${data.installation}
+  ---
   ## Usage
-
+  Here is an example of how to use this development:
+  ${data.usage}
+  ---
   ## License
   ${data.license}
+  ---
   ## Contributing
-  ${data.contributing}
+  ${data.contributors}
+  ---
   ## Tests
-
+  ${data.test}
+  ---
   ## Questions`);
   reject("No Data");
   })

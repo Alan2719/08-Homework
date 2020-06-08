@@ -6,47 +6,52 @@ function Askquestions() {
     return new Promise((resolve,reject)=> {
         resolve(inquirer.prompt([
             {
-                message:'What is the name of your project?',
+                message:'Project Name: ',
                 type:'input',
                 name:'title'
             },
             {
-                message:'Describe your project',
+                message:'Description of your project: ',
                 type:'input',
                 name:'description'
             },
             {
-                message:'What kind of packes does your application need to work?',
+                message:'Content of your file',
+                type:'input',
+                name:'content'
+            },
+            {
+                message:'Packages needed: ',
                 type:'input',
                 name:'packages'
             },
             {
-                message:'How does your application could be installed?',
+                message:'Installation: ',
                 type:'input',
                 name:'installation'
             },
             {
-                message:'Provide an example of how your application works',
+                message:'How to use: ',
                 type:'input',
                 name:'usage'
             },
             {
-                message:'What kind of license does your application would have?',
+                message:'License(s): ',
                 type:'input',
                 name:'license'
             },
             {
-                message:'Named the people who contributed to this development',
+                message:'Contributor(s): ',
                 type:'input',
                 name:'contributors'
             },
             {
-                message:'How can a test could be run?',
+                message:'Test: ',
                 type:'input',
                 name:'test'
             },
             {
-                message:'Write common questions users will have when using your application',
+                message:'Common questions: ',
                 type:'input',
                 name:'questions'
             }
@@ -69,9 +74,12 @@ let writeToFile = (fileName, data) => {
 async function init() { 
     try {
         const data = await Askquestions();
-        //console.log(data);
+        let contentArray = data.content.split(' ');
+        //console.log(contentArray);
+        data.content = contentArray;
         const sendAnswers = await new generateMarkdown(data);
-        writeToFile(data.title,sendAnswers);
+        console.log(sendAnswers);
+        //writeToFile(data.title,sendAnswers);
     } catch(err) {
         console.log(err);
     }
