@@ -51,9 +51,9 @@ function Askquestions() {
                 name:'test'
             },
             {
-                message:'Common questions: ',
+                message:'Contact: ',
                 type:'input',
-                name:'questions'
+                name:'contact'
             }
         ]))
         reject("Unable to get information!")

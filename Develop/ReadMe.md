@@ -1,19 +1,25 @@
 # ${data.title}
+  This is a guide to install this application:
+  ## Table of contents
+  -[Description](#Description)
+  -[Installation](#Installation)
+  -[Usage](#Usage)
+  -[License](#License)
+  -[Contributors](#Contributors)
+  -[Test](#Test)
+  -[Contact](#Contact)
   ## Description
   Description
-  ## Table of contents
-  Content
   ## Installation
-  This is a guide to install this application:
   Installation
   ## Usage
   Here is an example of how to use this development:
   Usage
   ## License
   License
-  ## Contributing
+  ## Contributors
   Contributors
   ## Tests
  Tests
-  ## Questions
+  ## Contact
   Questions
