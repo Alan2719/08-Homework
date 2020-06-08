@@ -1,0 +1,22 @@
+{
+  "name": "08-homework",
+  "version": "1.0.0",
+  "description": "Develop to create a README.dm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alan2719/08-Homework.git"
+  },
+  "keywords": [
+    "README"
+  ],
+  "author": "Alan Velazquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alan2719/08-Homework/issues"
+  },
+  "homepage": "https://github.com/Alan2719/08-Homework#readme"
+}
