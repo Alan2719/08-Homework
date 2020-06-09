@@ -16,9 +16,9 @@ function Askquestions() {
                 name:'description'
             },
             {
-                message:'GitHub User: ',
+                message:'Email: ',
                 type:'input',
-                name:'user'
+                name:'mail'
             },
             {
                 message:'Packages needed: ',
@@ -51,9 +51,9 @@ function Askquestions() {
                 name:'test'
             },
             {
-                message:'Contact: ',
+                message:'Github User: ',
                 type:'input',
-                name:'contact'
+                name:'user'
             }
         ]))
         reject("Unable to get information!")
@@ -63,7 +63,7 @@ function Askquestions() {
 let writeToFile = (fileName, data) => {
     console.log(fileName);
     console.log(data);
-    writeToFile('fileName + "Readme.md"', data, (err) => {
+    writeToFile("Readme.md", data, (err) => {
         if (err) {
             throw err;
         } 
