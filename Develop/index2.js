@@ -16,11 +16,6 @@ function Askquestions() {
                 name:'description'
             },
             {
-                message:'Email: ',
-                type:'input',
-                name:'mail'
-            },
-            {
                 message:'Packages needed: ',
                 type:'input',
                 name:'packages'
@@ -36,7 +31,7 @@ function Askquestions() {
                 name:'usage'
             },
             {
-                message:'License(s): ',
+                message:'License: ',
                 type:'input',
                 name:'license'
             },
@@ -76,7 +71,7 @@ async function init() {
         const data = await Askquestions();
         const sendAnswers = await new generateMarkdown(data);
         console.log(sendAnswers);
-        //writeToFile(data.title,sendAnswers);
+        writeToFile(data.title,sendAnswers);
     } catch(err) {
         console.log(err);
     }
