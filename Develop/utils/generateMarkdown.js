@@ -18,7 +18,7 @@ function generateMarkdown(data) {
    Here is an example of how to use this development.
    ${data.usage}
    ## License
-   [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+   ![APM](https://img.shields.io/apm/l/${data.license})
    ## Contributors
    ${data.contributors}
    ## Tests
