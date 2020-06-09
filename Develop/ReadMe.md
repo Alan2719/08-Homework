@@ -16,7 +16,7 @@
    Here is an example of how to use this development.
    Example
    ## License
-   MIT
+   ![APM](https://img.shields.io/apm/l/$MIT)
    ## Contributors
    Alan
    ## Tests
