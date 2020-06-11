@@ -1,27 +1,28 @@
 # App
   ## Description
    This is an app
-   This is a guide to install this application.
-   ## Table of contents
+  ## Table of contents
    - [Description](#Description)
    - [Installation](#Installation)
    - [Usage](#Usage)
    - [License](#License)
-   - [Contributors](#Contributors)
+   - [Contributing](#Contributing)
    - [Test](#Test)
    - [Contact](#Contact)
-   ## Installation
-   Download it
-   ## Usage
-   Here is an example of how to use this development.
-   Example
-   ## License
-   ![APM](https://img.shields.io/apm/l/$MIT)
-   ## Contributors
-   Alan
-   ## Tests
-  Test
-   ## Contact
+  
+  ## Installation
+  To install the necessary dependencies, type the next code:
+    > npm i
+  ## Usage
+  Read the manual
+  ## License
+  This development is licensed by MIT license.
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  ## Contributing
+  Contact me
+  ## Tests
+   >npm i test
+  ## Questions
   Contact me for any doubts or comments.
-  * Email: undefined
   * GitHub User: Alan2719
+  * Email: <alan219.ahcv@gmail.com>

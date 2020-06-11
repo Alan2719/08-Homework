@@ -1,32 +1,33 @@
-function generateMarkdown(data) {
+function generateMarkdown(data,badge) {
   return new Promise((resolve,reject) => {
   resolve(`# ${data.title}
   ## Description
    ${data.description}
-   ## Table of contents
+  ## Table of contents
    - [Description](#Description)
    - [Installation](#Installation)
    - [Usage](#Usage)
    - [License](#License)
-   - [Contributors](#Contributors)
+   - [Contributing](#Contributing)
    - [Test](#Test)
    - [Contact](#Contact)
-   ## Installation
-   > This is a guide to install this application.
-   ${data.installation}
-   ## Usage
-   Here is an example of how to use this development.
-   ${data.usage}
-   ## License
-   ![APM](https://img.shields.io/apm/l/${data.license})
-   ## Contributors
-   ${data.contributors}
-   ## Tests
-  ${data.test}
-   ## Contact
+  
+  ## Installation
+  To install the necessary dependencies, type the next code:
+    > ${data.installation}
+  ## Usage
+  ${data.usage}
+  ## License
+  This development is licensed by ${data.license} license.
+  ${badge}
+  ## Contributing
+  ${data.contributing}
+  ## Tests
+   >${data.test}
+  ## Questions
   Contact me for any doubts or comments.
   * GitHub User: ${data.user}
-  * `);
+  * Email: <${data.email}>`);
   reject("No Data");
   })
 }
